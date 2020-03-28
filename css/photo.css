@@ -88,3 +88,15 @@ hr{
     }
 
 }
+@media  screen and  ( max-width:480px )
+{
+    main
+    {
+        grid-template-columns: 1fr !important;
+    }
+    .box:hover
+    {
+        transform: none;
+    }
+
+}
