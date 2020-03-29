@@ -60,7 +60,8 @@ p
 body
 {
    background: url('../images/Abract01.png')!important;
-   background-size: cover;
+    background-repeat: repeat-x !important;
+    background-size: cover !important;
 }
 
 
