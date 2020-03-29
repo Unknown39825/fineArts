@@ -12,10 +12,6 @@ p
     margin:40px auto;
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
-     
-     
-    
-    
 }
 .box{
      padding: 20px;
@@ -43,10 +39,10 @@ p
 .title
 {
     color: skyblue;
-    position: relative;
-    left: 40%;
-    
-
+}
+main
+{
+    text-align: center;
 }
 .box:hover{
     transform: scale(1.3,1.3);

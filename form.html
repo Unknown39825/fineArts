@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us</title>
+    <!-- coustoms styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jQuery v3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/aos.js"></script>
+    
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        function pass()
+        {
+            var x = document.getElementById('pas');
+            var y= document.getElementById('conf');
+            if(x.value!=y.value)
+            {
+                alert('password not matched');
+                x.value="";
+                y.value="";
+            }
+
+
+        }
+        function em()
+        {
+            var e=document.getElementById('Email');
+           console.log(e.value);
+           var c= new String;
+           c=e.value;
+           var i;
+           i=0;
+           if(!(c.includes("@") && c.includes(".")))
+           {
+               alert('Invalid Email');
+               e.value = "";
+           }
+           
+           
+           
+        }
+        function pho()
+        {
+            var e = document.getElementById('ph');
+            console.log(e.value);
+            var x = e.value;
+            var length=0;
+            while(x>0)
+            {length++;
+            x=parseInt(x/10);
+            }
+            console.log(length);
+            if(lenght!=10)
+            {
+                alert('invalid no');
+                e.value="";
+            }
+            
+            
+        }
+        
+
+    </script>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin:0;
+            
+        }
+        body
+        {
+             background:url("./images/Abract02.png");
+            background-size: cover;
+        }
+        .con{
+             
+            width:80%;
+            margin:20vh auto;
+            display: grid;
+            grid-template-columns: 60% 20%;
+             box-shadow: 10px 8px 5px skyblue;
+            border-radius: 10px;
+            
+            
+        }
+     
+        .main{
+          
+            padding:20px;
+           
+            
+            
+        }
+       
+        .main hr{
+           margin: 20px ;
+        }
+        
+        .form label{
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        .form input{
+            margin:10px;
+            
+        }
+        .form input[type="text"],input[type="password"], input[type="number"]{
+            width:70%;
+            height: 35px;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .form button{
+            padding:10px;
+            margin:20px 40px;
+        }
+ 
+        label
+        {
+            color: skyblue;
+        }
+        .marker
+        {
+            margin: 90px auto;
+           width: 20vw;
+           
+            float: right;
+        }
+        select
+        {
+            margin: 10px 20px;
+            width: 50%;
+            height:30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- ----------------navigation-------------- -->
+    
+    <nav class="nav" id="hell">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+    
+                <a href="./index.html" class="text-grey bold"><img class="logo" src="./images/logo.png" width="50px"
+                        alt="">FineArts <span class="red">NIT Kurukhetra</span></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars" onclick="hello()"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="index.html" >home</a></li>
+                    <li class="nav-link"><a href="photogallery.html">Art Gallery</a></li>
+                    <li class="nav-link"><a href="./form.html" class="active">Join us</a></li>
+                </ul>
+            </div>
+            <div class="social text-grey">
+                <a href="https://www.facebook.com/faclubnitk" target="_blank">
+                    <i class="fab fa-facebook "></i>
+                </a>
+    
+                <a href="https://www.instagram.com/fineartsclub.nitkkr/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+    
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- ---------x-------navigation-------x------- -->
+    <div class="con">
+        
+        <div class="main">
+            <h1>
+               Become Our Member
+
+            </h1>
+            <hr>
+            <div class="form">
+                <form action="" method="GET">
+
+                    <label for="Name">Name</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="first name" required><br>
+                    <input type="text" name="lname" id="lname" placeholder="last name" required><br>
+                    <br>
+                    <br><br>
+                    <label for="subject">Year:</label>
+                    <br>
+                    
+                    <input type="radio" name="year" value="1">Ist <br>
+                    <input type="radio" name="year" value="2">IInd <br>
+                    <input type="radio" name="year" value="3">IIIrd <br>
+                    <input type="radio" name="year" value="4">IVth  <br>
+                    <br><br>
+               
+                    <label for="branch">Branch</label><br>
+                    <select name="branch" id="">
+                        <option value="CS">Computer Science</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ece">Electronics and Communicatino</option>
+                        <option value="me">Mechanical Engineering</option>
+                        <option value="civil">Civil</option>
+                        <option value="elec">Electrical</option>
+                        <option value="pie">Production and Engineering</option>
+                       
+                    </select>
+                    <br>
+                    <br><br>
+                    <label for="Email" >Email </label><br>
+                    <input type="text"required id="Email" onblur="em()"><br>
+                    <label for="phone">Phone no</label><br>
+                    <input type="number" required name="phone" id="ph"onblur="pho()"><br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="intrest">Intrested in :</label>
+                    
+                    <br><input type="checkbox" name="int" value="s" id=""> Sketching
+                    <br><input type="checkbox" name="int" value="p" id=""> Painting
+                    <br><input type="checkbox" name="int" value="de" id=""> Designing
+                    <br><input type="checkbox" name="int" value="ph" id=""> Photography
+                    <br><input type="checkbox" name="int" value="dec" id=""> Decoration
+                    <br><input type="checkbox" name="int" value="O" id="">Origami And Craft
+                    <br><input type="checkbox" name="int" value="dec" id=""> Decoration
+                    <br><input type="checkbox" name="int" value="mod" id=""> Modeling
+                    
+                   
+                    <br><br>
+
+
+
+                    <label for="about">About Yourself</label>
+                    <br><br>
+                    <textarea name="about" id="" cols="40" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <label for="join">Why you wanted to Join Us</label>
+                    <br><br>
+                    <textarea name="join" id="" cols="40" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <button class="btn" type="submit">
+                        submit
+                    </button>
+                    <button class="btn" type="reset">reset</button>
+                    
+
+
+
+                </form>
+            </div>
+            
+
+        </div>
+        <div class="marker">
+            <img src="./images/logo.png" alt="" width="100%">
+        
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>about us</h2>
+                <div class="about">
+                    <p>
+                        Fine Arts and Modelling club is one of the official clubs of NIT Kurukshetra. It is the hub of
+                        artists who come together
+                        to ameliorate and sustain art culture in the college. And while doing the same, it provides ample
+                        opportunities to those
+                        with artistic inclination to hone and flaunt their skills with art and craft.
+                    </p>
+                </div>
+            </div>
+            <div class="newletter">
+                <h2>news letter</h2>
+                <h4>stay updated to our pages</h4>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span>
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>instgram</h2>
+                <div class="flex-row">
+                    <img src="./images/instagram/thumb-card3.png" alt="">
+                    <img src="./images/instagram/thumb-card4.png" alt="">
+                    <img src="./images/instagram/thumb-card5.png" alt="">
+                </div>
+                <div class="flex-row">
+                    <img src="./images/instagram/thumb-card6.png" alt="">
+                    <img src="./images/instagram/thumb-card7.png" alt="">
+                    <img src="./images/instagram/thumb-card8.png" alt="">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>follow us</h2>
+                <p>let us be social</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/faclubnitk" target="_blank">
+                        <i class="fab fa-facebook "></i>
+                    </a>
+    
+                    <a href="https://www.instagram.com/fineartsclub.nitkkr/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <div class="flex-row">
+                <h4>copyrights &copy Mr.Nobody </h4>
+            </div>
+        </div>
+    
+    </footer>
+        <div class="loader-back" id="pop">
+            <div class="loader">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </div>
+        <script>
+            document.onload
+            {
+                document.getElementById('pop').style.display = "none";
+            }
+        </script>
+
+
+    
+</body>
+</html>;
