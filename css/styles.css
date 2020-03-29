@@ -17,11 +17,13 @@
     --sky :linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
 }
+
 html,body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
 
 /* #####global class### */
 a{
@@ -75,6 +77,7 @@ button.btn
     background-color: skyblue;
 
 }
+
 
 /* navbar */
 
@@ -504,6 +507,13 @@ footer.footer .rights h4
     top:1%;
     left:96%;
     border:none;
+    transform: initial;
+    transition: 1s transform;
+}
+.close:hover
+{
+    transform: scale(1.5,1.5);
+    transition: 500ms transform;
 }
 
 .pop img
@@ -599,3 +609,4 @@ main .site-title h1,h3{
     
 
 }
+
