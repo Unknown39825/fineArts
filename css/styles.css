@@ -231,7 +231,7 @@ main .site-background .btn:hover
 }
 
 
-main .blog{
+main .art{
     background: url('../images/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -244,11 +244,11 @@ main .blog{
 
 
 
-main .blog-post
+main .art-post
 {
     padding: 1rem;
 }
-main .blog-post .blog-content
+main .art-post .art-content
 {
     border-radius: 20px;
     overflow: hidden;
@@ -261,22 +261,22 @@ main .blog-post .blog-content
     box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.726);
 }
 
-main .blog-content .blog-title
+main .art-content .art-title
 {
     padding: 1rem 0;
     color:black;
 }
-main .blog-content h3
+main .art-content h3
 {
     font-size: 2rem;
 }
 
-main .blog content .btn-blog
+main .art content .btn-art
 {
     padding:5rem 2rem;
     margin:5rem;
 }
-main .blog-content span
+main .art-content span
 {
     display:block;
     margin:20px;
@@ -492,8 +492,6 @@ footer.footer .rights h4
     box-shadow: 2px 2px 5px whitesmoke;
     margin: 5% auto;
     
-
-    
 }
 .close
 {
@@ -583,7 +581,7 @@ main .site-title h1,h3{
 }
 @media screen and ( max-width:520px )
 {
-    main .blog
+    main .art
     {
         height:125vh;
     }
