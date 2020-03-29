@@ -480,10 +480,12 @@ footer.footer .rights h4
 }
 .pop
 {
-    margin: 10% auto;
-    width:50vw;
-    height:35vw;
+    
+    width:50%;
+    height:auto;
     box-shadow: 2px 2px 5px whitesmoke;
+    margin: 5% auto;
+    
 
     
 }
@@ -519,6 +521,10 @@ footer.footer .rights h4
 
     footer.footer .container
     {grid-template-columns: 50% 50%;}
+    .pop
+{
+    width:70%;  
+}
    
 }
 
@@ -538,11 +544,18 @@ footer.footer .rights h4
     }
     footer.footer .container
     {grid-template-columns: 100%}
+
+    
+  
     
 main .site-title h1,h3{
     margin: 1.4rem;
     font-size: 2.5rem;
     
+}
+.pop
+{
+    width:80%;  
 }
 
 }
@@ -563,5 +576,13 @@ main .site-title h1,h3{
     font-size: 1rem;
     
 }
-   
+.pop
+{
+    width:100%;  
+}
+  .blur
+    {
+        display: none !important;
+    }   
+
 }
