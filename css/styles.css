@@ -562,6 +562,14 @@ main .site-title h1,h3{
     width:80%;  
 }
 
+ .con{
+         grid-template-columns: 1fr !important;
+     } 
+     .marker
+     {
+         display: none;
+     }
+
 }
 @media screen and ( max-width:520px )
 {
@@ -588,12 +596,6 @@ main .site-title h1,h3{
     {
         display: none !important;
     }  
-     .con{
-         grid-template-columns: 1fr;
-     } 
-     .marker
-     {
-         display: none;
-     }
+    
 
 }
