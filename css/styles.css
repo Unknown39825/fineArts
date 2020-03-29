@@ -473,12 +473,14 @@ footer.footer .rights h4
     height:100%;
     z-index: 22;
     background-color: rgba(173, 216, 230, 0.479);
-    /* display: none; */
+    display: none;
+    margin:0;
+    padding:0;
     
 }
 .pop
 {
-    margin: 25vh auto;
+    margin: 10% auto;
     width:50vw;
     height:35vw;
     box-shadow: 2px 2px 5px whitesmoke;
