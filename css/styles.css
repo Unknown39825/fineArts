@@ -228,7 +228,7 @@ main .blog{
     background: url('../images/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
-    height: 120vh;
+    height: auto;
     width:100%;
     margin-top:-20px;
     background-blend-mode: var(--white);
@@ -249,14 +249,14 @@ main .blog-post .blog-content
     flex-direction: column;
     text-align: center;
     width: 80%;
-    height:75vh;
+    height: auto;
     margin:3rem 2rem;
     box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.726);
 }
 
 main .blog-content .blog-title
 {
-    padding: 2rem 0;
+    padding: 1rem 0;
     color:black;
 }
 main .blog-content h3
@@ -266,7 +266,7 @@ main .blog-content h3
 
 main .blog content .btn-blog
 {
-    padding:7rem 2rem;
+    padding:5rem 2rem;
     margin:5rem;
 }
 main .blog-content span

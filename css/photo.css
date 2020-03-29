@@ -8,7 +8,7 @@ p
     font-size: 20px;
 }
 main{
-    width:90%;
+    width:95%;
     margin:40px auto;
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -23,7 +23,8 @@ main{
     transition: 0.7s transform;
      margin: 0;
     overflow: hidden;
-     height:40vh;
+     height:20vw;
+     width: 20vw;
    
 
 }
@@ -64,6 +65,9 @@ hr{
 
 
 
+
+
+
 @media  screen and  ( max-width:840px )
 {
     main
@@ -74,7 +78,8 @@ hr{
 @media  screen and  ( max-width:640px )
 {
     .box{
-        height:23vh;
+        height:25vw !important;
+        width: 25vw !important;
     }
 }
 
@@ -86,6 +91,10 @@ hr{
     {
         grid-template-columns: 1fr 1fr  !important;
     }
+     .box{
+        height:40vw !important;
+        width: 40vw !important;
+    }
 
 }
 @media  screen and  ( max-width:480px )
@@ -93,6 +102,12 @@ hr{
     main
     {
         grid-template-columns: 1fr !important;
+    }
+    .box
+    {
+        height:80vw !important;
+        width: 80vw !important;
+    
     }
     .box:hover
     {
