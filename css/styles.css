@@ -587,6 +587,13 @@ main .site-title h1,h3{
   .blur
     {
         display: none !important;
-    }   
+    }  
+     .con{
+         grid-template-columns: 1fr;
+     } 
+     .marker
+     {
+         display: none;
+     }
 
 }
