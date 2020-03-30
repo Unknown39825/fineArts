@@ -89,12 +89,12 @@ button.btn
 
 .nav{
     background-color: white;
-    padding: 0 3vw;
+    padding: 0 1vw;
     height: 70px;
     overflow: hidden;
     box-shadow: 0px 7px 20px skyblue !important ;
     position: fixed; 
-   width: 95%;
+   width: 98%;
    backface-visibility: none;
    z-index: 9;
 
@@ -117,6 +117,8 @@ button.btn
    font-family: var(--Abel);
     font-weight: bold;
     font-size: 1.6rem;
+    float:left;
+    
     
     
 
@@ -168,14 +170,14 @@ button.btn
 {
     position: absolute;
     top:0%;
-    width: 90%;
+    width: 97%;
     cursor: pointer;
 }
 .nav .toggle-collapse .toggle-icons
 {
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 0;
+    padding: 1.7rem 0rem;
     display: none;
 }
 .nav .toggle-collapse .toggle-icon i{
@@ -183,6 +185,7 @@ button.btn
     color: var(--bg-color);
 
 }
+
 .bold
 {
     font-size: 2rem !important;
@@ -570,10 +573,10 @@ footer.footer .rights h4
 
 @media screen and ( max-width:750px)
 {
-    .nav .nav-menu,.nav-items{
+    .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
-    .nav .toggle-collapse .toggle-icons
+.nav .toggle-collapse .toggle-icons
 {
     
     display: flex;

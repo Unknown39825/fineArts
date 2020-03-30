@@ -82,6 +82,15 @@ hr{
     {
         grid-template-columns: 1fr 1fr 1fr !important;
     }
+    .box{
+ 
+     height:25vw !important;
+     width: 25vw !important;
+     margin: 0 auto;
+     
+   
+
+}
 }
 @media  screen and  ( max-width:640px )
 {
