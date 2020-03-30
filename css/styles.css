@@ -108,7 +108,7 @@ button.btn
 }
 
 .collapse{
-    height: 30rem;
+    height: auto;
 }
 .nav .nav-brand a{
     font-size: 1.6rem;
