@@ -320,6 +320,30 @@
         </div>
     
     </footer>
+
+    <div class="loading">
+        <script>
+            function LOAD() {
+                document.getElementById("load").style.display = "none";
+
+            }
+            document.onreadystatechange = function () {
+                if (document.readyState == "complete") {
+                    LOAD();
+                }
+            };
+
+
+        </script>
+    
+        <div class="loader-back" id="load">
+            <div class="loader">
+                <img src="./images/loader.gif" alt="">
+            </div>
+        </div>
+    
+    </div>
+
     
       
 
