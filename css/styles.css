@@ -490,15 +490,18 @@ footer.footer .rights h4
     display: none;
     margin:0;
     padding:0;
+    align-content: center !important;
+    justify-content: center !important;
     
 }
 .pop
 {
     
-    width:50%;
+    width:90%;
     height:auto;
-    box-shadow: 2px 2px 5px whitesmoke;
-    margin: 5% auto;
+    margin:10px auto;
+
+    
     
 }
 .close
@@ -627,14 +630,7 @@ main .site-title h1,h3{
     font-size: 1rem;
     
 }
-.pop
-{
-    width:100%;  
-}
-  .blur
-    {
-        display: none !important;
-    }  
+
     
 
 }

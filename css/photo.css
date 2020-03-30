@@ -130,5 +130,13 @@ hr{
     {
         transform: none;
     }
+    .pop
+{
+    width:100%;  
+}
+  .blur
+    {
+        display: none !important;
+    }  
 
 }
