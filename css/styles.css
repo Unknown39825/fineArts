@@ -180,7 +180,7 @@ button.btn
     padding: 1.7rem 0rem;
     display: none;
 }
-.nav .toggle-collapse .toggle-icon i{
+.nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--bg-color);
 
