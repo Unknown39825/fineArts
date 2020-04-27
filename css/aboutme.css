@@ -1,0 +1,263 @@
+.nav 
+{
+    background-color: black;
+    box-shadow: none !important;
+    z-index: 99;
+    
+
+}
+
+::-webkit-scrollbar
+        {
+            width: 0;
+        }
+        #scroll
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+
+        }
+        #progress
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20px;
+            
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            animation: animate 5s linear infinite;
+          
+        }
+        @keyframes animate
+        {
+            0%,100%
+            {
+                filter:hue-rotate(0deg);
+            }
+            50%
+            {
+                filter: hue-rotate(360deg);
+            }
+        }
+        #progress:before
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            filter: blur(10px);
+        }
+        #progress::after
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top,#008aff,#00ffe7);
+            filter: blur(10px);
+        }
+
+*
+{
+    color: grey !important;
+    margin:0 ;
+    padding: 0 ;
+    scroll-behavior: smooth;
+    text-align: center;
+    
+}
+.container
+{
+    width: 80%;
+    margin:20px auto !important;
+}
+p,pre
+{
+    font-size: 2rem;
+}
+
+
+.nav .nav-menu a
+{
+    color: white !important;
+    padding: 20px;
+}
+
+
+
+.nav .nav-menu
+{
+    color: white;
+}
+.container
+{
+    color: grey;
+      margin-top: 100px !important;
+    text-align: center;
+    min-height: 400px;
+}
+
+
+body
+{
+    background-color:black;
+}
+
+.home
+{
+    display: grid;
+    background: url("../ch.jpg") ;
+    background-position: center;
+    background-attachment: fixed;
+
+
+    margin: 10px;
+    grid-template-columns: 100%;
+    background: black;
+}
+.name
+{
+  
+    
+    padding: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.name h1
+{
+    font-size: 10vw;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.name h3
+{
+    font-size: 6vw;
+    text-emphasis:bold;
+}
+
+.services
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.service
+{
+    height: 30vw;
+    width: 30vw;
+    margin:20px auto;
+    
+    
+}
+.service i
+{
+    margin-top:10px;
+    font-size: 6rem;
+}
+.Masonary
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    margin:40px;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: minmax(200px,1fr);
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-items: center;
+
+}
+.art
+{
+    
+    
+    margin:20px;
+}
+
+
+.Masonary .art:nth-child(1)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(2)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(4)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(5)
+{
+    grid-column: span 2;
+}
+.Masonary .art:nth-child(8)
+{
+    grid-column: span 2;
+}
+.projects
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.art-post
+{
+    margin: 20px;
+}
+
+
+
+
+
+img
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+footer.footer .label
+{
+    color: grey;
+    font-size: 2vw;
+    display: block;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+footer.footer .container .mysocial 
+{
+    display: grid;
+    justify-content: center;
+    
+    
+}
+
+
+
+footer.footer .mysocial i
+{
+    font-size:5rem ;
+    color: grey;
+}
+

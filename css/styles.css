@@ -24,7 +24,10 @@ html,body{
     overflow-x: hidden;
 }
 
-
+input
+{
+    text-transform: lowercase !important;
+}
 /* #####global class### */
 a{
     text-decoration: none;
@@ -159,6 +162,7 @@ button.btn
 .nav .social i
 {
     padding:  0 .4rem;
+    font-size:2rem;
 }
 .nav .social a{
     color:var(--text-light)
@@ -166,6 +170,7 @@ button.btn
 .text-grey{
     color: var(--text-grey);
 }
+
 .nav .toggle-collapse
 {
     position: absolute;
@@ -200,30 +205,51 @@ button.btn
 /* site title */
 
 
-main .site-title
+.cover .site-title
 {
-     background:url("../images/Background-image.jpg");
-    background-size:100%;
-    background-repeat: no-repeat;
     height:55vw;
     margin-top:70px;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 100px;
+    padding:0;
+    
+}
+.cover .site-title img
+{
+    
+    width: 100%;
+    height: 100%;
 }
 
 /* site title close */
 
-main .site-background{
+.cover .site-background{
     padding-top: 0;
     text-align: center;
     color: var(--white);
 }
 
-main .site-title h1,h3{
+h1,h3{
     margin: 1.4rem;
     font-size: 3.5rem;
     
+}
+.cover .site-title h1{
+    
+    text-align: center;
+    display: block;
+    font-size:3.5vw;
+    
+    
+}
+.amazing
+{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
 main .site-title .btn{
@@ -465,6 +491,7 @@ footer.footer .instagram div>img
 footer.footer .follow i
 {
     padding: 1rem;
+    font-size: 2rem;
 }
 footer.footer .rights h4
 {
