@@ -135,32 +135,42 @@ body
     background-attachment: fixed;
 
 
-    margin: 10px;
-    grid-template-columns: 100%;
+  
     background:transparent;
     
 }
 .name
 {
+
   
     
     padding: 20px auto;
     display: flex;
     flex-direction: column;
-
+    line-height: 9rem;
     align-items: center;
     justify-content: center;
+   
 }
 .name h1
 {
-    font-size: 10vw;
+    font-size: 8rem;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    
     
 }
 .name h3
 {
     font-size: 6vw;
     text-emphasis:bold;
+     display: flex;
+     padding:0;
+     margin:0 auto;
+    align-items: center;
+    align-self: center;
 }
 
 .services
