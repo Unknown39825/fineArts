@@ -12,6 +12,8 @@ const res ={
 
 
 
+
+
 function hello() 
 {
     var x = document.getElementById("hell");
@@ -19,6 +21,14 @@ function hello()
     x.className += " collapse";
     else
       x.className = "nav";
+}
+
+function reset()
+{
+  var x = document.getElementById("hell");
+  x.className = "nav";
+  
+
 }
 
 

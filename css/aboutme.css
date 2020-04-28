@@ -70,26 +70,32 @@
 {
     color: grey !important;
     margin:0 ;
-    padding: 0 ;
-    scroll-behavior: smooth;
+    padding: 0;
+    scroll-behavior: smooth;;
+    
     text-align: center;
     
 }
 .container
 {
     width: 80%;
-    margin:20px auto !important;
+    margin:0 auto;
+    margin-top:20px !important;
 }
 p,pre
 {
     font-size: 2rem;
+}
+body
+{
+    background-color: black !important;
 }
 
 
 .nav .nav-menu a
 {
     color: white !important;
-    padding: 20px;
+    padding: 0;
 }
 
 
@@ -105,11 +111,20 @@ p,pre
     text-align: center;
     min-height: 400px;
 }
+#particles-js
+{
+    background-color:transparent !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+}
+
 
 
 body
 {
-    background-color:black;
+    background-color:transparent;
 }
 
 .home
@@ -122,7 +137,8 @@ body
 
     margin: 10px;
     grid-template-columns: 100%;
-    background: black;
+    background:transparent;
+    
 }
 .name
 {
@@ -155,16 +171,32 @@ body
 }
 .service
 {
-    height: 30vw;
-    width: 30vw;
-    margin:20px auto;
+    
+    min-width: 300px;
+    margin: 20px ;
+    min-height: 300px;
+    font-size: 2rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+
     
     
+    
+}
+.services h3
+{
+    font-size: 2rem;
 }
 .service i
 {
     margin-top:10px;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 .Masonary
 {
@@ -207,7 +239,7 @@ body
 {
     grid-column: span 2;
 }
-.projects
+.project
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,6 +259,31 @@ img
 }
 
 
+.btn
+{
+    background-color: transparent !important;
+    padding: 20px ;
+    border: 2px gray solid !important;
+}
+.contact input ,.contact textarea
+{
+    width: 60%;
+    margin: 20px;
+    background-color: transparent !important;
+    border: 1px solid grey;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Abel';
+}
+.contact input
+{
+    height: 50px;
+}
+.contact .btn
+{
+    width: 70%;
+}
 
 
 
@@ -251,7 +308,20 @@ footer.footer .container .mysocial
     justify-content: center;
     
     
+}.loader-black
+{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    z-index: 100;
 }
+
 
 
 
@@ -261,3 +331,27 @@ footer.footer .mysocial i
     color: grey;
 }
 
+
+
+@media screen and ( max-width:900px)
+{
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+.nav .toggle-collapse .toggle-icons
+{
+    
+    display: flex;
+
+}
+.services
+{
+    grid-template-columns: 1fr;
+    font-size: 3rem;
+}
+.project
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}

@@ -24,7 +24,7 @@ html,body{
     overflow-x: hidden;
 }
 
-input
+input[type="email"]
 {
     text-transform: lowercase !important;
 }
@@ -493,8 +493,19 @@ footer.footer .follow i
     padding: 1rem;
     font-size: 2rem;
 }
-footer.footer .rights h4
+footer.footer .rights
 {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffFf;
+}
+footer.footer .rights a
+{
+    font-size: 20px;
+    font-family: 'Abel';
     display: flex;
     margin:0 auto;
     align-items: center;
