@@ -141,13 +141,10 @@ body
 }
 .name
 {
-
-  
-    
-    padding: 20px auto;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
-    line-height: 9rem;
+    
     align-items: center;
     justify-content: center;
    
@@ -159,6 +156,7 @@ body
     display: flex;
     align-items: center;
     align-self: center;
+    line-height: 9rem;
     
     
 }
@@ -364,5 +362,10 @@ footer.footer .mysocial i
 {
     display: grid;
     grid-template-columns: 1fr;
+}
+.name h1
+{
+    font-size: 4.5rem !important;
+    line-height: 4.5rem !important;
 }
 }
