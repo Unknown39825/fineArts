@@ -527,12 +527,15 @@ footer.footer .rights a
     z-index: 22;
     background-color: rgba(173, 216, 230, 0.479);
     display: none;
+    grid-template-columns: 80%;
+    grid-template-rows: 70%;
     margin:0;
     padding:0;
-    align-content: center !important;
+    
     justify-content: center !important;
     
 }
+
 .pop
 {
     
@@ -566,7 +569,8 @@ footer.footer .rights a
 
 .pop img
 {
-    width: 100%;
+    width:80%;
+    margin:0 10%;
 }
 
 .loader-back
