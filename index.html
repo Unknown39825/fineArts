@@ -598,16 +598,10 @@
 
    <div class="loading">
         <script>
-            function LOAD() {
-                document.getElementById("load").style.display = "none";
-
-            }
-            document.onreadystatechange = function () {
-                if (document.readyState == "complete") {
-                    LOAD();
-                }
-            };
-
+            
+                setTimeout(() => {
+                   document.getElementById("load").style.display = "none"; 
+                }, 10000);
 
         </script>
         
