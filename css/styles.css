@@ -203,6 +203,7 @@ button.btn
     text-align: center;
     width: 90%;
     margin:20px auto;
+    margin-top: 10vw;
 }
 
 /* site title */
@@ -684,4 +685,15 @@ main .site-title h1,h3{
 input.email
 {
     text-transform: lowercase !important;
+}
+.wave
+{
+    position: relative;
+    bottom: 17vw;
+    left: 0;
+    backface-visibility: visible;
+    pointer-events: none;
+    
+
+    
 }
