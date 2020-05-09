@@ -24,10 +24,7 @@ html,body{
     overflow-x: hidden;
 }
 
-input[type="email"]
-{
-    text-transform: lowercase !important;
-}
+
 /* #####global class### */
 a{
     text-decoration: none;
@@ -201,6 +198,12 @@ button.btn
     font-size: 1rem;
 }
 /* main section  */
+.who
+{
+    text-align: center;
+    width: 90%;
+    margin:20px auto;
+}
 
 /* site title */
 
@@ -678,3 +681,7 @@ main .site-title h1,h3{
 
 }
 
+input.email
+{
+    text-transform: lowercase !important;
+}
