@@ -1,3 +1,9 @@
+$(window).load(function () {
+
+  $("#load").fadeOut("slow");;
+});
+
+
 const res ={
   0:
   {items:1},
