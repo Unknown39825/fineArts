@@ -4,7 +4,7 @@
     box-shadow: none !important;
     z-index: 99;
     
-
+    
 }
 
 ::-webkit-scrollbar
@@ -96,6 +96,17 @@ body
 {
     color: white !important;
     padding: 0;
+}
+.nav-brand img
+
+{
+    height: 80px;
+    width: auto;
+    background-color: black;
+    
+    
+    pointer-events: none;
+
 }
 
 
